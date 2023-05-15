@@ -1,0 +1,12 @@
+[1]
+        Title: The Great Gatsby
+        Auhor:  F. Scott Fitzgerald
+        Publisher:  Scribner
+        Publication Date:  1925
+        
+[2]
+        Title: Nineteen Eighty-Four
+        Auhor:  George Orewll
+        Publisher:  Secker & Warburg
+        Publication Date:  1949
+        
