@@ -28,7 +28,6 @@ class Library:
     # This initialises the `Library` class
     def __init__(self):
         self.books = []
-        self.newBooks = []
 
     # This function checks to make sure the new book doesn't already exist in the `books` list
     def indexExists(self, new):
@@ -49,18 +48,13 @@ class Library:
 
         # This opens the `indexed_books.txt` in "write" mode
         with open(output, 'w') as outputFile:
-            # This opens the `indexed_books.txt` in "read" mode
-            with open(output, 'r') as existingIndexedBooks:
-                self.newBooks = existingIndexedBooks.readlines()
 
             # This codeblock iterates through the `books` list and adds "[1]", "[2]", etc. to the start of each book details after the `book.toString()` function
-            for i, book in enumerate(self.books, len(self.newBooks) + 1):
-                index = f"[{i}]"
+            for i, book in enumerate(self.books):
+                index = f"[{i+1}]"
                 indexed = f"{index}{book.toString()}\n"
 
-                # This checks to make sure the new book details are not in the `newBooks` list, and then writes it to the `indexed_books.txt` file
-                if indexed.strip() not in self.newBooks:
-                    outputFile.write(indexed)
+                outputFile.write(indexed)
 
 # Create an object by calling the `Library()` class
 library = Library()

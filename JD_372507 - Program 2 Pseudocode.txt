@@ -1,0 +1,40 @@
+CLASS Book:
+    FUNCTION getBook():
+        RETURN "{bookTitle} by {Bookauthor}"
+
+    FUNCTION getPublication():
+        RETURN "{publicationDate} by {bookPublisher}"
+
+    FUNCTION toString(self):
+        RETURN "{bookTitle}
+
+CLASS Library:
+    FUNCTION initiliase():
+        SET books TO LIST[]
+        SET newBooks TO LIST[]
+
+    FUNCTION indexExists():
+        FOR each book in books:
+            IF bookTitle EQUALS newBookTitle and bookAuthor EQUALS newBookAuthor:
+                RETURN True
+
+        RETURN False
+
+    FUNCTION index():
+        OPEN 'book_details.txt':
+
+            FOR each line in 'book_details.txt
+                separate the title, author, publisher, and publication date and SET as newBook
+
+                IF newBook does not exist in books:
+                    add newBook to books
+
+        OPEN 'indexed_books.txt'
+
+            FOR each book in books, with index 'i':
+                SET index TO "[{i}]"
+                SET indexedBook TO "{index}{book.toString()}"
+
+                WRITE indexedBooks TO 'indexed_books.txt'
+
+Library().index()
