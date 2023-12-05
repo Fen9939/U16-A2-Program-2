@@ -6,7 +6,13 @@
         
 [2]
         Title: Nineteen Eighty-Four
-        Auhor:  George Orewll
+        Auhor:  George Orwell
         Publisher:  Secker & Warburg
         Publication Date:  1949
+        
+[3]
+        Title: War and Peace
+        Auhor:  Leo Toltsoy
+        Publisher:  The Russian Messenger
+        Publication Date:  1869
         
